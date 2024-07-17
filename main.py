@@ -6,7 +6,7 @@ import sqlite3
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
 # from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from PyPDF2 import PdfReader
