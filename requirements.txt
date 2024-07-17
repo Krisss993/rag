@@ -7,3 +7,4 @@ PyPDF2
 fastembed
 sentence-transformers
 chromadb
+protobuf==3.20.3
