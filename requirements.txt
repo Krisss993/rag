@@ -2,6 +2,7 @@ streamlit
 langchain
 langchain-groq
 langchain-community
+langchain-huggingface
 tiktoken
 PyPDF2
 fastembed
