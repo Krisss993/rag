@@ -8,3 +8,4 @@ PyPDF2
 fastembed
 sentence-transformers
 transformers
+chromadb
