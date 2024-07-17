@@ -1,10 +1,9 @@
 streamlit
 langchain
 langchain-groq
-chromadb
 pysqlite3-binary
 tiktoken
 PyPDF2
-faiss-cpu
 fastembed
-langchain-community
+sentence-transformers
+transformers

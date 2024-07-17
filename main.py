@@ -3,10 +3,11 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import streamlit as st
+
 import sqlite3
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
-from fastembed import TextEmbedding
+from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from PyPDF2 import PdfReader
@@ -33,7 +34,7 @@ def generate_response(file, groq_api_key, query):
     )
     docs = text_splitter.create_documents(formatted_document)
     #create embeddings
-    embeddings = TextEmbedding(model_name="BAAI/bge-small-en-v1.5")
+    embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
     #load to vector database
     store = Chroma.from_documents(docs, embeddings)
 
