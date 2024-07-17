@@ -3,7 +3,6 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import streamlit as st
-import chromadb
 import sqlite3
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
