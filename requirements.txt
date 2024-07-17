@@ -7,3 +7,4 @@ tiktoken
 PyPDF2
 faiss-cpu
 fastembed
+langchain-community
