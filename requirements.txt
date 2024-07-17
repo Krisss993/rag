@@ -7,4 +7,3 @@ tiktoken
 PyPDF2
 fastembed
 sentence-transformers
-chromadb
